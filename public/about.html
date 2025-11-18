@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Додаткова сторінка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .team-member {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Про нашу компанію</h1>
+        <nav>
+            <a href="/">Головна</a> | 
+            <a href="/about.html">Про нас</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about-section">
+            <h2>Наша місія</h2>
+            <p>Ми створюємо якісні веб-додатки з використанням сучасних технологій.</p>
+            
+            <div class="team-member">
+                <h3>Наша команда</h3>
+                <p>Ми - групу ентузіастів, які люблять свою справу.</p>
+            </div>
+            
+            <button id="contact-btn">Зв'язатися з нами</button>
+            <p id="contact-message" style="display: none; color: green;">Дякуємо за інтерес! Ми зв'яжемося з вами.</p>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('contact-btn').addEventListener('click', function() {
+            document.getElementById('contact-message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
